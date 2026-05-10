@@ -1,7 +1,20 @@
+LOGIN = 433568113
+PASSWORD = "vi895656@UM"
+SERVER = "Exness-MT5Trial7"
 
-print("MT5 Bot Ready")
-print("Strategy: Liquidity Sweep + Swing TP")
-print("Lot Size: 0.10")
-print("Login: 433568113")
-print("Server: Exness-MT5Trial7")
-print("Demo Bot Configured Successfully")
+SYMBOLS = {
+    "BTCUSD": 0.50,
+    "ETHUSD": 10.00
+}
+
+BUFFER_POINTS = 50
+MAX_OPEN_TRADES = 1
+DEVIATION = 20
+MAGIC = 123456
+COMMENT = "LiquiditySweepBot"
+
+print("Multi-symbol bot configured successfully!")
+print("BTCUSD Lot:", SYMBOLS["BTCUSD"])
+print("ETHUSD Lot:", SYMBOLS["ETHUSD"])
+print("Login:", LOGIN)
+print("Server:", SERVER)
